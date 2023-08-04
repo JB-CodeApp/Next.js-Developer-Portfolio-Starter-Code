@@ -34,7 +34,7 @@ const NavBar = () => {
       <nav>
         <CustomLink href="/" title="Home" className="m-4" />
         <CustomLink href="/about" title="About" className="m-4" />
-        <CustomLink href="/project" title="Projects" className="m-4" />
+        <CustomLink href="/projects" title="Projects" className="m-4" />
         <CustomLink href="/articals" title="Articals" className="m-4" />
       </nav>
 
