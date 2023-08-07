@@ -6,13 +6,15 @@ const Footer = () => {
   return (
     <footer
       className="w-full border-t-2 border-solid border-black
-    font-medium text-lg"
+    font-medium text-lg dark:text-white dark:border-white sm:text-base "
     >
-      <Layout className="py-8 flex items-center justify-between">
+      <Layout className="py-8 flex items-center justify-between lg:flex-col lg:py-6 ">
         <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
-        <div className="flex items-center">
+        <div className="flex items-center lg:py-2">
           Build With{" "}
-          <span className="text-fuchsia-400 text-2xl px-1">&#9825;</span>{" "}
+          <span className="text-fuchsia-400 dark:text-blue-600 text-2xl px-1">
+            &#9825;
+          </span>{" "}
           by&nbsp;
           <Link
             href="https://devdreaming.com"
