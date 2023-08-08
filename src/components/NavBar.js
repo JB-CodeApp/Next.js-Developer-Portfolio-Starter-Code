@@ -21,10 +21,12 @@ const CustomLink = ({ href, title, className = "" }) => {
       {title}
 
       <span
-        className={`h-[1px] inline-block bg-black 
+        className={`
+        h-[1px] inline-block bg-black 
         absolute left-0 -bottom-0.5 
         group-hover:w-full transition-[width] ease duration-300 
-        ${router.asPath === href ? "w-full" : "w-0"}dark:bg-black`}
+        ${router.asPath === href ? "w-full" : "w-0"}
+        dark:bg-white`}
       >
         &nbsp;
       </span>
@@ -48,7 +50,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
       {title}
 
       <span
-        className={`h-[1px] inline-block bg-white absolute left-0 -bottom-0.5 
+        className={`h-[1px] inline-block bg-black absolute left-0 -bottom-0.5 
         group-hover:w-full transition-[width] ease duration-300 
         ${router.asPath === href ? "w-full" : "w-0"}dark:bg-black`}
       >
