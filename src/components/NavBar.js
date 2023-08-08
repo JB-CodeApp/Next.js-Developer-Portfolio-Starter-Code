@@ -50,9 +50,12 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
       {title}
 
       <span
-        className={`h-[1px] inline-block bg-black absolute left-0 -bottom-0.5 
+        className={`
+        h-[1px] inline-block bg-white
+        absolute left-0 -bottom-0.5 
         group-hover:w-full transition-[width] ease duration-300 
-        ${router.asPath === href ? "w-full" : "w-0"}dark:bg-black`}
+        ${router.asPath === href ? "w-full" : "w-0"}
+        dark:bg-black`}
       >
         &nbsp;
       </span>
@@ -152,7 +155,7 @@ const NavBar = () => {
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
             className={`ml-3 flex items-center justify-center rounded-full p-1
-          $(mode === "light" ? "bg-black text-white":"bg-white text-black")`}
+          ${mode === "light" ? "bg-black text-white" : "bg-white text-black"}`}
           >
             {mode === "dark" ? (
               <SunIcon className={"fill-black"} />
@@ -248,7 +251,7 @@ const NavBar = () => {
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
               className={`ml-3 flex items-center justify-center rounded-full p-1
-        $(mode === "light" ? "bg-black text-white":"bg-white text-black")`}
+        ${mode === "light" ? "bg-black text-white" : "bg-white text-black"}`}
             >
               {mode === "dark" ? (
                 <SunIcon className={"fill-black"} />
