@@ -17,16 +17,16 @@ const Footer = () => {
           </span>{" "}
           by&nbsp;
           <Link
-            href="https://devdreaming.com"
+            href="/"
             className="underline
           underline-oofset-2"
-            target={"_blank"}
+            // target={"_blank"}
           >
-            CodeBucks
+            Laravel Developer
           </Link>
         </div>
         <Link
-          href="https://devdreaming.com"
+          href="mailto:tp.jigar@gmail.com"
           target={"_blank"}
           className="underline
           underline-oofset-2"

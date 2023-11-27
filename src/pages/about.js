@@ -38,9 +38,10 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>CodeBucks | About Page</title>
+        <title>Laravel Developer | About</title>
         <meta name="description" content="any description" />
       </Head>
+      
       <TransitionEffect />
       <main className="flex  w-full flex-col items-center justify-center dark:text-white">
         <Layout className="pt-16">
@@ -54,7 +55,7 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                Hi, I am CodeBucks, a web developer and UI/UX designer with a
+                Hi, I am Laravel Developer Online, a web developer and UI/UX designer with a
                 passion for creating beautiful, functional, and user-centered
                 digital experiences. With 4 years of experience in the field. I
                 am always looking for new and innovative ways to bring my
@@ -82,7 +83,7 @@ const about = () => {
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-black dark:bg-white" />
               <Image
                 src={profilePic}
-                alt="CodeBucks"
+                alt="Laravel Developer Online"
                 className="w-full h-auto  rounded-2xl"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

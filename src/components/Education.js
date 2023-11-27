@@ -45,23 +45,16 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
+            type="Bachelor of Science (Information Technology), Computer Science"
+            time="2007 - 2010"
+            place="Veer Narmad South Gujarat University, Surat"
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence. "
           />
 
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence. "
-          />
-
-          <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
+            type="M.Sc.IT (Information Technology), Computer Science"
+            time="2010 - 2012"
+            place="Veer Narmad South Gujarat University, Surat"
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence. "
           />
         </ul>

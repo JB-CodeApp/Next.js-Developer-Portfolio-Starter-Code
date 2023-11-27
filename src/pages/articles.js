@@ -1,17 +1,18 @@
 import AnimatedText from "@/components/AnimatedText";
-import React, { useRef } from "react";
+import React, { useState, useEffect, useRef } from 'react';
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
-import article2 from "../../public/images/articles/create loading screen in react js.jpg";
 import { motion, useMotionValue } from "framer-motion";
+import article1 from "../../public/images/articles/laravel-in-enterprise-scalable-solution.jpg";
+import article2 from "../../public/images/articles/embracing-full-stack-development-modern-tech-landscape.jpg";
 import article3 from "../../public/images/articles/create modal component in react using react portals.png";
 import article4 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
 import article5 from "../../public/images/articles/smooth scrolling in reactjs.png";
 import TransitionEffect from "@/components/TransitionEffect";
-// import article6 from "../../public/images/articles/create modal component in react using react portals.png";
+import DataComponent from "./DataComponent";
+import RandomTwo from "./RandomTwo";
 
 const FramerImage = motion(Image);
 
@@ -48,6 +49,8 @@ const MovingImg = ({ title, img, link }) => {
         whileInView={{ opacity: 1, transition: { duration: 0.2 } }}
         ref={imgRef}
         src={img}
+        height={500}
+        width={800}
         alt={title}
         className="z-10 w-96 h-auto hidden absolute rounded-lg md:!hidden"
       />
@@ -55,7 +58,8 @@ const MovingImg = ({ title, img, link }) => {
   );
 };
 
-const Article = ({ img, title, date, link }) => {
+const Article = ({ img, title, date, link, width, height }) => {
+
   return (
     <motion.li
       initial={{ y: 200 }}
@@ -65,7 +69,8 @@ const Article = ({ img, title, date, link }) => {
     border-r-4 border-b-4 dark:border-white dark:bg-black dark:text-white 
     sm:flex-col"
     >
-      <MovingImg title={title} img={img} link={link} />
+      <MovingImg title={title} img={img} link={link} width={500} height={500} fill={true}/>
+      {/* <Image src={`/images/articles/${img}`} alt={title} width={width} height={height} /> */}
 
       <span className="text-fuchsia-400 font-semibold pl-4 dark:text-blue-600 sm:self-start sm:pl-0 xs:text-sm  ">
         {date}
@@ -94,6 +99,8 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
           transition={{ duration: 0.2 }}
           priority
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          height={500}
+          width={800}
         />
       </Link>
       <Link href={link} target="_blank">
@@ -110,11 +117,30 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
   );
 };
 
-function articles() {
+
+function Articles({ img }) {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/api/data');
+        const jsonData = await response.json();
+        setData(jsonData);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const imagePath = process.env.SITE_URL + `/images/articles/${img}`;
+
   return (
     <>
       <Head>
-        <title>CodeBucks | About Page</title>
+        <title>Laravel Developer | About </title>
         <meta name="description" content="any description" />
       </Head>
       <TransitionEffect />
@@ -122,89 +148,31 @@ function articles() {
         <Layout className="pt-16">
           <AnimatedText
             text="Words Can Change The World! "
-            className="mb-16
-          lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl "
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl "
           />
-          <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
-            <FeaturedArticle
-              title="Build A Custom Pagination Component In Reactjs From Scratch
-Learn how"
-              summary="to build a custom pagination component in ReactJS from scratch. 
-             Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-              time="9 min read"
-              link="/"
-              img={article1}
-            />
-            <FeaturedArticle
-              title="Build A Custom Pagination Component In Reactjs From Scratch
-Learn how"
-              summary="to build a custom pagination component in ReactJS from scratch. 
-             Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-              time="9 min read"
-              link="/"
-              img={article2}
-            />
-          </ul>
+          <RandomTwo />
 
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
-            All Articals
+            All Articles
           </h2>
+
           <ul>
-            <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-              date="March 22,2023"
-              link="/"
-              img={article3}
-            />
-
-            <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-              date="March 22,2023"
-              link="/"
-              img={article4}
-            />
-
-            <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-              date="March 22,2023"
-              link="/"
-              img={article5}
-            />
-
-            <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-              date="March 22,2023"
-              link="/"
-              img={article3}
-            />
-
-            <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-              date="March 22,2023"
-              link="/"
-              img={article3}
-            />
-
-            <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-              date="March 22,2023"
-              link="/"
-              img={article3}
-            />
-
-            <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-              date="March 22,2023"
-              link="/"
-              img={article3}
-            />
-
-            <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-              date="March 22,2023"
-              link="/"
-              img={article3}
-            />
+            {data.map((article) => (
+              <li key={article.id}>
+                <Article
+                  title={article.title}
+                  date={article.date}
+                  link={article.link}
+                  img={process.env.SITE_URL + `/images/articles/${article.img}`} fill={true}
+                />
+                {/* <Image
+                  src={ process.env.SITE_URL + `/images/articles/${article.img}`}
+                  alt={article.title}
+                  width={500}
+                  height={500}
+                  /> */}
+              </li>
+            ))}
           </ul>
         </Layout>
       </main>
@@ -212,4 +180,4 @@ Learn how"
   );
 }
 
-export default articles;
+export default Articles;

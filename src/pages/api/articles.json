@@ -1,0 +1,22 @@
+[
+  // {
+  //   "title": "Laravel in Enterprise: A Robust Solution for Scalable Applications",
+  //   "summary": "Explore the versatility and strengths of Laravel as a top-tier PHP framework...",
+  //   "time": "9 min read",
+  //   "link": "https://www.expertlaravel.com/blog/laravel-in-enterprise-scalable-solution",
+  //   "img": "article1"
+  // },
+  {
+    "title": "Embracing Full Stack Development in the Modern Tech Landscape",
+    "summary": "The world of web application development is rapidly evolving, and choosing...",
+    "time": "9 min read",
+    "link": "https://www.expertlaravel.com/blog/embracing-full-stack-development-modern-tech-landscape",
+    "src": [
+      {
+        "src": "embracing-full-stack-development-modern-tech-landscape.jpg",
+        "width": 500,
+        "height": 500
+      }
+    ]
+  }
+]

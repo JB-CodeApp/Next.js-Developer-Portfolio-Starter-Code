@@ -9,7 +9,7 @@ const Logo = () => {
     <div className="flex items-center justify-center mt-2">
       <MotionLink
         href="/"
-        className="w-16 h-16 bg-black text-white flex items-center justify-center rounded-full text-2xl font-bold
+        className="px-4 py-4 bg-black text-white flex items-center justify-center rounded-lg text-2xl font-bold
         border border-solid border-transparent dark:border-white"
         whileHover={{
           backgroundColor: [
@@ -23,7 +23,7 @@ const Logo = () => {
           transition: { duration: 1, repeat: Infinity },
         }}
       >
-        CB
+        Laravel Developer
       </MotionLink>
     </div>
   );

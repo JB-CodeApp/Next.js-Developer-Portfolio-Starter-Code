@@ -14,9 +14,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Expert Laravel Developer | Web Development Services - LaravelDeveloper.online</title>
+        <title>Laravel Developer</title>
         <meta name="description" content="Looking for an expert Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!" />
-        <meta name="keyword" content="Laravel developer, web development services, expert developer, Laravel framework, Vue.js development, responsive web design" />
+        <meta name="keyword" content="Laravel developer, web development services, laravel developer, Laravel framework, Vue.js development, responsive web design" />
       </Head>
       <TransitionEffect />
       <main className="flex items-center text-black w-full min-h-screen dark:text-white ">
@@ -25,7 +25,7 @@ export default function Home() {
             <div className="w-1/2 md:w-full">
               {/* <Image
                 src={profilepic}
-                alt="CodeBucks"
+                alt="Laravel Developer Online"
                 className="w-full h-auto lg:hidden md:inline-block md:w-full"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -43,7 +43,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="/JIGAR_PATEL_CV.pdf"
+                  href="/JIGAR_PATEL_10_YEARS_PHP_DEVELOPER.pdf"
                   target={"_black"}
                   className="flex items-center bg-black text-white p-2.5 px-6
                   rounded-lg text-lg font-semibold hover:bg-white hover:text-black
@@ -72,7 +72,7 @@ export default function Home() {
         <HireMe />
 
         <div className="absolute right-8 bottom-8 inline-block w-24 ms:hidden">
-          <Image src={lightBulb} alt="CodeBucks" className="w-full h-auto " />
+          <Image src={lightBulb} alt="Laravel Developer Online" className="w-full h-auto " />
         </div>
       </main>
     </>
