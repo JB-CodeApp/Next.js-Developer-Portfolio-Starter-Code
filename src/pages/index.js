@@ -9,15 +9,38 @@ import HireMe from "@/components/HireMe";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import TransitionEffect from "@/components/TransitionEffect";
 import LogoAnimation from "@/components/LogoAnimation";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Laravel Developer</title>
+        {/* <title>Laravel Developer</title>
         <meta name="description" content="Looking for an expert Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!" />
-        <meta name="keyword" content="Laravel developer, web development services, laravel developer, Laravel framework, Vue.js development, responsive web design" />
+        <meta name="keyword" content="Laravel developer, web development services, laravel developer, Laravel framework, Vue.js development, responsive web design" /> */}
       </Head>
+      <NextSeo
+
+      title="Laravel Developer"
+      description="Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!"
+      canonical="https://laraveldeveloper.online/"
+       openGraph={{
+        url: 'https://laraveldeveloper.online/',
+        title: 'Expert Laravel Developer',
+        description: 'Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!',
+        images: [
+          {
+            url: 'https://laraveldeveloper.online/images/laravelexpert.png',
+            width: 1200,
+            height: 640,
+            alt: 'Laravel Developer',
+            type: 'image/jpeg',
+          },
+        ],
+        siteName: 'Laravel Developer',
+      }}
+
+      />
       <TransitionEffect />
       <main className="flex items-center text-black w-full min-h-screen dark:text-white ">
         <Layout className="pt-0 md:pt-16 sm:pt-8">

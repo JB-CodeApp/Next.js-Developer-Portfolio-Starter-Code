@@ -13,9 +13,11 @@ import project3 from "../../public/images/projects/CaptureMoment.webp";
 import project4 from "../../public/images/projects/PropertyDealer.webp";
 import project5 from "../../public/images/projects/TouristJourney.webp";
 import project6 from "../../public/images/projects/TouristJourney.webp";
+import { NextSeo } from "next-seo";
 
 
 const FramerImage = motion(Image);
+
 const projects = () => {
   const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     return (
@@ -144,6 +146,28 @@ const projects = () => {
         <title>Laravel Developer | Projects</title>
         <meta name="description" content="any description" />
       </Head>
+      <NextSeo
+
+          title="Laravel Developer"
+          description="Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!"
+          canonical="https://laraveldeveloper.online/projects"
+          openGraph={{
+            url: 'https://laraveldeveloper.online/images/projects.png',
+            title: 'Expert Laravel Developer',
+            description: 'Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!',
+            images: [
+              {
+                url: 'https://laraveldeveloper.online/images/projects.png',
+                width: 1200,
+                height: 640,
+                alt: 'Laravel Developer',
+                type: 'image/jpeg',
+              },
+            ],
+            siteName: 'Laravel Developer',
+          }}
+
+          />
       <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-white">
         <Layout className="pt-16">
@@ -157,6 +181,7 @@ const projects = () => {
               <FeaturedProject
                 title="HourlySpaces"
                 img={project1}
+                height={500}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
                 link="/"
                 github="/"

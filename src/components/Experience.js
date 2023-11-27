@@ -52,44 +52,48 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Software Engineer"
-            company="Google"
+            position="Full Stack Developer"
+            company="Plan Left"
             companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
+            time="May 2022 - Jun 2023"
+            address="Nashville, USA"
+            work="Joining PlanLeft as a ull Stack evelo er means harnessing m e ertise in P P and
+            Laravel s eciali ing in SAAS and multi tenant s stems With skills in ree e AP
+            develo ment and ira ro ect management ll craft d namic web a s bring an
+            SE calculator and le management ro cienc to o timi e digital solutions."
+          />
+
+          <Details
+            position="Full Stack Developer"
+            company="Affinite Solutionss"
+            // companyLink="www.google.com"
+            time="Jul 2020 - Nov 2022"
+            address="Singapore"
+            work="As a ull Stack evelo er at Af nite Solutions e cel in P P and Laravel crafting
+d namic web solutions Pro cient in REST AP integration and AWS de lo ment with
+s eciali ation in SES email services
+e ertise e tends to CR
+R S ERP and
+Twilio communication"
+          />
+
+          <Details
+            position="Full Stack Developer"
+            company="Bluebell Aps"
+            // companyLink="www.google.com"
+            time="Jan 2020 - Apr 2020"
+            address="Kobenhavn, Denmark"
             work="Worked on a team responsible for developing new features for Google's 
 search engine, including improving the accuracy and relevance of search results and 
 developing new tools for data analysis and visualization."
           />
 
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
-          />
-
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
-          />
-
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
+            position="Full Stack Developer"
+            company="A3Gate Pvt Ltd."
+            // companyLink="www.google.com"
+            time="Jan 2019 - Dec 2019"
+            address="Bengaluru, India"
             work="Worked on a team responsible for developing new features for Google's 
 search engine, including improving the accuracy and relevance of search results and 
 developing new tools for data analysis and visualization."

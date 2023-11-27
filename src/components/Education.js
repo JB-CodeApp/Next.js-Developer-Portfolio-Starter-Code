@@ -44,6 +44,13 @@ const Education = () => {
           md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+        <Details
+            type="M.Sc.IT (Information Technology), Computer Science"
+            time="2010 - 2012"
+            place="Veer Narmad South Gujarat University, Surat"
+            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence. "
+          />
+
           <Details
             type="Bachelor of Science (Information Technology), Computer Science"
             time="2007 - 2010"
@@ -51,12 +58,6 @@ const Education = () => {
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence. "
           />
 
-          <Details
-            type="M.Sc.IT (Information Technology), Computer Science"
-            time="2010 - 2012"
-            place="Veer Narmad South Gujarat University, Surat"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence. "
-          />
         </ul>
       </div>
     </div>

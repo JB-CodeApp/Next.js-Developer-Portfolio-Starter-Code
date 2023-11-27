@@ -27,24 +27,22 @@ export default function MyApp({ Component, pageProps }) {
       description="Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!"
       canonical="https://laraveldeveloper.online/"
       openGraph={{
-        url: 'https://laraveldeveloper.online/',
+        url: 'https://laraveldeveloper.online/images/laravelexpert.png',
         title: 'Expert Laravel Developer',
         description: 'Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!',
         images: [
           {
-            url: 'https://www.example.ie/og-image-01.jpg',
-            width: 800,
-            height: 600,
+            url: 'https://laraveldeveloper.online/images/laravelexpert.png',
+            width: 1200,
+            height: 640,
             alt: 'Laravel Developer',
             type: 'image/jpeg',
           },
-          { url: 'https://www.example.ie/og-image-04.jpg' },
         ],
         siteName: 'Laravel Developer',
       }}
       twitter={{
-        handle: '@handle',
-        site: '@site',
+        site: '@jigar24_patel',
         cardType: 'summary_large_image',
       }}
     />

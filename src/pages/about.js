@@ -9,6 +9,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import TransitionEffect from "@/components/TransitionEffect";
+import { NextSeo } from "next-seo";
 
 const AnimatedNumber = ({ value }) => {
   const ref = useRef(null);
@@ -41,6 +42,28 @@ const about = () => {
         <title>Laravel Developer | About</title>
         <meta name="description" content="any description" />
       </Head>
+      <NextSeo
+
+          title="Laravel Developer"
+          description="Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!"
+          canonical="https://laraveldeveloper.online/projects"
+          openGraph={{
+            url: 'https://laraveldeveloper.online/images/about.png',
+            title: 'Expert Laravel Developer',
+            description: 'Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!',
+            images: [
+              {
+                url: 'https://laraveldeveloper.online/images/about.png',
+                width: 1200,
+                height: 640,
+                alt: 'Laravel Developer',
+                type: 'image/jpeg',
+              },
+            ],
+            siteName: 'Laravel Developer',
+          }}
+
+          />
       
       <TransitionEffect />
       <main className="flex  w-full flex-col items-center justify-center dark:text-white">

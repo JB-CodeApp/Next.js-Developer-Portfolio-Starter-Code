@@ -13,6 +13,7 @@ import article5 from "../../public/images/articles/smooth scrolling in reactjs.p
 import TransitionEffect from "@/components/TransitionEffect";
 import DataComponent from "./DataComponent";
 import RandomTwo from "./RandomTwo";
+import { NextSeo } from "next-seo";
 
 const FramerImage = motion(Image);
 
@@ -143,6 +144,28 @@ function Articles({ img }) {
         <title>Laravel Developer | About </title>
         <meta name="description" content="any description" />
       </Head>
+
+      <NextSeo
+          title="Laravel Developer"
+          description="Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!"
+          canonical="https://laraveldeveloper.online/projects"
+          openGraph={{
+            url: 'https://laraveldeveloper.online/images/blog.png',
+            title: 'Expert Laravel Developer',
+            description: 'Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!',
+            images: [
+              {
+                url: 'https://laraveldeveloper.online/images/blog.png',
+                width: 1200,
+                height: 640,
+                alt: 'Laravel Developer',
+                type: 'image/jpeg',
+              },
+            ],
+            siteName: 'Laravel Developer',
+          }}
+          />
+
       <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-white">
         <Layout className="pt-16">
