@@ -52,70 +52,42 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+            position="Full Stack Developer"
+            company="Plan Left"
+            // companyLink="www.google.com"
+            time="May 2022 - Jun 2023"
+            address="Nashville, USA"
+            work="While serving as a Full Stack Developer at Plan Left, I had the opportunity to apply my expertise across multiple domains, including SaaS, Multi-tenancy, Roles-based systems, and startup MVPs. My contributions made a substantial impact on the success of the company's projects. Working at Plan Left was a valuable experience, allowing me to apply my skills to real-world projects."
           />
 
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+            position="Full Stack Developer"
+            company="Affinite Solutionss"
+            // companyLink="www.google.com"
+            time="Jul 2020 - Nov 2022"
+            address="Singapore"
+            work="As a Senior Software Developer at Affinite Solutions, I've contributed to innovative projects, enhancing my skills in PHP, Laravel, SAAS, Twilio, API integrations, CRM development, and Trello-based project management. My role extended beyond coding to actively participating in project planning and collaborating with cross-functional teams. Highlights include HRMS, Shopping Voucher Reward App, Contact Sharing Business Card, Centralized CRM, and AI-Powered Automation SalesBuilder."
           />
 
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+            position="Full Stack Developer"
+            company="Bluebell Aps"
+            // companyLink="www.google.com"
+            time="Jan 2020 - Apr 2020"
+            address="Kobenhavn, Denmark"
+            work="During my tenure at Bluebell Aps as a Full Stack Developer, I excelled by leveraging my expertise in PHP, Laravel, Vue.js, and API development to contribute significantly to various exciting projects."
           />
 
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+            position="Full Stack Developer"
+            company="A3Gate Pvt Ltd."
+            // companyLink="www.google.com"
+            time="Jan 2019 - Dec 2019"
+            address="Bengaluru, India"
+            work="While at A3Gate Solutions, I had the privilege of contributing to state-of-the-art Software as a Service (SaaS) projects, specializing in Apartment management, Security, and Visitor Management solutions. Serving as a Full-Stack Developer, my responsibilities spanned a diverse range, showcasing proficiency in PHP, Laravel, and back-end web development, coupled with expertise in API development and integration."
           />
 
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
-          />
-
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
-          />
+          
         </ul>
       </div>
     </div>

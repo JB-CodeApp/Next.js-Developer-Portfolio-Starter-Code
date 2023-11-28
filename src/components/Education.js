@@ -44,26 +44,21 @@ const Education = () => {
           md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-          <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence. "
+        <Details
+            type="M.Sc.IT (Information Technology), Computer Science"
+            time="2010 - 2012"
+            place="Veer Narmad South Gujarat University, Surat"
+            info="A B.Sc. in Information Technology or Computer Science includes courses like Data Structures, Web Development, Operating Systems, and Artificial Intelligence, providing a comprehensive foundation in computer science principles and applications.
+            "
           />
 
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence. "
+            type="Bachelor of Science (Information Technology), Computer Science"
+            time="2007 - 2010"
+            place="Veer Narmad South Gujarat University, Surat"
+            info="An M.Sc. in Information Technology or Computer Science encompasses advanced courses like Machine Learning, Cybersecurity, and Big Data Analytics, offering in-depth expertise in cutting-edge technologies and specialized areas within the field."
           />
 
-          <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence. "
-          />
         </ul>
       </div>
     </div>
