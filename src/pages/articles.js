@@ -171,8 +171,8 @@ function Articles({ img }) {
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-white">
         <Layout className="pt-16">
           <AnimatedText
-            text="Words Can Change The World! "
-            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl "
+            text="Our Creative Thinking Words "
+            className="mb-16 mt-4 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl "
           />
           <RandomTwo />
 
