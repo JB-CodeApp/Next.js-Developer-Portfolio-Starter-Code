@@ -11,10 +11,10 @@ const LogoAnimation = () => {
       transition={{ duration: 1.5, ease: "easeInOut" }}
     >
       <Image
-        src="/images/laravel.png"
+        src="/images/hero.webp"
         alt="Laravel_Logo"
-        width={500}
-        height={1000}
+        width={1080}
+        height={1080}
       />
     </motion.div>
   );

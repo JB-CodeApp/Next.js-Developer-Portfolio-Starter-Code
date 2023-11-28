@@ -6,11 +6,11 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useMotionValue } from "framer-motion";
-// import article1 from "../../public/images/articles/laravel-in-enterprise-scalable-solution.jpg";
-// import article2 from "../../public/images/articles/embracing-full-stack-development-modern-tech-landscape.jpg";
-// import article3 from "../../public/images/articles/create modal component in react using react portals.png";
-// import article4 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
-// import article5 from "../../public/images/articles/smooth scrolling in reactjs.png";
+// import article1 from "../../public/images/articles/laravel-in-enterprise-scalable-solution.webp";
+// import article2 from "../../public/images/articles/embracing-full-stack-development-modern-tech-landscape.webp";
+// import article3 from "../../public/images/articles/create modal component in react using react portals.webp";
+// import article4 from "../../public/images/articles/form validation in reactjs using custom react hook.webp";
+// import article5 from "../../public/images/articles/smooth scrolling in reactjs.webp";
 // import TransitionEffect from "@/components/TransitionEffect";
 // import DataComponent from "./DataComponent";
 
@@ -97,7 +97,6 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
 
 function RandomTwo(img) {
   const [data, setData] = useState([]);
-  const imagePath = process.env.SITE_URL + `/images/articles/${img}`;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -114,73 +113,60 @@ function RandomTwo(img) {
   }, []);
 
   const handleOnError = () => {
-    setImgSrc("images/articles/smooth scrolling in reactjs.png");
+    setImgSrc("images/blog.webp");
   };
+
+  const shuffledData = data.sort(() => Math.random() - 0.5);
+  const selectedData = shuffledData.slice(0, 2);
   
   return (
     <>
-           {/* <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16"> */}
-            
-           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
-              {data.map((article) => (
-                <li key={article.id}>
-                  <FeaturedArticle
-                    title={article.title}
-                    summary={article.summary}
-                    time={article.time}
-                    link={article.link}
-                    img={process.env.SITE_URL + `/images/articles/${article.img}`} 
-                    // width={500}
-                    // height={800}
-                    onError={handleOnError}
-                  >
-                  </FeaturedArticle>
-                </li>
-              ))}
-            </ul>
-            
-              {/* <Image
-                src="http://localhost:3000/images/articles/embracing-full-stack-development-modern-tech-landscape.jpg"
-                alt={article.title}
-                width={500}
-                height={500}
-                onError={handleOnError}
-                /> */}
-            {/* {data.map((articles) => (
-              <li key={articles.id}>
-                <FeaturedArticle
-                  title={articles.title}
-                  summary={articles.summary}
-                  time={articles.time}
-                  link={articles.link}
-                  // img={imagePath}
-                />
-                
-
-                  <Image src={imagePath} width={500} height={500} alt="Image" />
-              </li>
-            ))} */}
-          {/* </ul> */}
-          {/* <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
+     <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
+        {selectedData.map((article) => (
+          <li key={article.id}>
+            {/* Assuming FeaturedArticle is a custom component */}
             <FeaturedArticle
-              title={item.title}
-              summary="Explore the versatility and strengths of Laravel as a top-tier PHP framework for developing large-scale enterprise applications. Discover how Laravel's flexibility, security, community support, and extensive features make it a compelling choice for businesses seeking to build scalable and secure solutions."
-              time="9 min read"
-              link="https://www.expertlaravel.com/blog/laravel-in-enterprise-scalable-solution"
-              img={article1}
+              title={article.title}
+              summary={article.summary}
+              time={article.time}
+              link={article.link}
+              img={`/images/articles/${article.img}`} 
+              onError={handleOnError}
             />
-            <FeaturedArticle
-              title="Embracing Full Stack Development in the Modern Tech Landscape"
-              summary="The world of web application development is rapidly evolving, and choosing the right backend framework can significantly impact your projects. In this comprehensive guide, we explore the top 15 backend frameworks, providing detailed descriptions of their key features."
-              time="9 min read"
-              link="https://www.expertlaravel.com/blog/embracing-full-stack-development-modern-tech-landscape"
-              img={article2}
-            />
-          </ul> */}
+          </li>
+        ))}
+      </ul>
 
+      {/* <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
+        {data.map((article) => (
+          <li key={article.id}>
+            <FeaturedArticle
+              title={article.title}
+              summary={article.summary}
+              time={article.time}
+              link={article.link}
+              // img={process.env.SITE_URL + `/images/articles/${article.img}`} 
+              img={`/images/articles/${article.img}`} 
+              // width={500}
+              // height={800}
+              onError={handleOnError}
+            >
+            </FeaturedArticle>
+          </li>
+        ))}
+      </ul> */}
     </>
   );
 }
 
-
 export default RandomTwo;
+
+          // <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
+          //   <FeaturedArticle
+          //     title={item.title}
+          //     summary="Explore the versatility and strengths of Laravel as a top-tier PHP framework for developing large-scale enterprise applications. Discover how Laravel's flexibility, security, community support, and extensive features make it a compelling choice for businesses seeking to build scalable and secure solutions."
+          //     time="9 min read"
+          //     link="https://www.expertlaravel.com/blog/laravel-in-enterprise-scalable-solution"
+          //     img={article1}
+          //   />
+          // </ul> 

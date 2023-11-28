@@ -5,11 +5,11 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useMotionValue } from "framer-motion";
-import article1 from "../../public/images/articles/laravel-in-enterprise-scalable-solution.jpg";
-import article2 from "../../public/images/articles/embracing-full-stack-development-modern-tech-landscape.jpg";
-import article3 from "../../public/images/articles/create modal component in react using react portals.png";
-import article4 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
-import article5 from "../../public/images/articles/smooth scrolling in reactjs.png";
+import article1 from "../../public/images/articles/laravel-in-enterprise-scalable-solution.webp";
+import article2 from "../../public/images/articles/embracing-full-stack-development-modern-tech-landscape.webp";
+import article3 from "../../public/images/articles/image.webp";
+import article4 from "../../public/images/articles/laravel-in-enterprise-scalable-solution.webp";
+import article5 from "../../public/images/articles/laravel-in-enterprise-scalable-solution.webp";
 import TransitionEffect from "@/components/TransitionEffect";
 import DataComponent from "./DataComponent";
 import RandomTwo from "./RandomTwo";
@@ -141,21 +141,21 @@ function Articles({ img }) {
   return (
     <>
       <Head>
-        <title>Laravel Developer | About </title>
+        <title>Laravel Developer </title>
         <meta name="description" content="any description" />
       </Head>
 
       <NextSeo
           title="Laravel Developer"
-          description="Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!"
-          canonical="https://laraveldeveloper.online/projects"
+          description="Explore top-notch web development with Laravel, Vue.js, and more. Elevate your online presence with top-tier developers."
+          canonical="https://laraveldeveloper.online/articles"
           openGraph={{
-            url: 'https://laraveldeveloper.online/images/blog.png',
-            title: 'Expert Laravel Developer',
-            description: 'Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!',
+            url: 'https://laraveldeveloper.online/images/blog.webp',
+            title: 'Laravel Developer',
+            description: 'Explore top-notch web development with Laravel, Vue.js, and more. Elevate your online presence with top-tier developers.',
             images: [
               {
-                url: 'https://laraveldeveloper.online/images/blog.png',
+                url: 'https://laraveldeveloper.online/images/blog.webp',
                 width: 1200,
                 height: 640,
                 alt: 'Laravel Developer',
@@ -165,6 +165,7 @@ function Articles({ img }) {
             siteName: 'Laravel Developer',
           }}
           />
+
 
       <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-white">
@@ -186,7 +187,8 @@ function Articles({ img }) {
                   title={article.title}
                   date={article.date}
                   link={article.link}
-                  img={process.env.SITE_URL + `/images/articles/${article.img}`} fill={true}
+                  // img={process.env.SITE_URL + `/images/articles/${article.img}`} fill={true}
+                  img={`/images/articles/${article.img}`} 
                 />
                 {/* <Image
                   src={ process.env.SITE_URL + `/images/articles/${article.img}`}

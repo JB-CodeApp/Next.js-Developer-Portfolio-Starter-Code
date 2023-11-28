@@ -7,12 +7,10 @@ import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
-import project1 from "../../public/images/projects/HourlySpaces.webp";
-import project2 from "../../public/images/projects/BookingNest.webp";
-import project3 from "../../public/images/projects/CaptureMoment.webp";
-import project4 from "../../public/images/projects/PropertyDealer.webp";
-import project5 from "../../public/images/projects/TouristJourney.webp";
-import project6 from "../../public/images/projects/TouristJourney.webp";
+import project1 from "../../public/images/projects/jbcodeapp.webp";
+import project2 from "../../public/images/projects/realestate.webp";
+import project3 from "../../public/images/projects/restaurent.webp";
+import project4 from "../../public/images/projects/HourlySpaces.webp";
 import { NextSeo } from "next-seo";
 
 
@@ -65,9 +63,9 @@ const projects = () => {
           </p>
 
           <div className="mt-2 flex items-center">
-            <Link href={github} target="_blank" className="w-10">
+            {/* <Link href={github} target="_blank" className="w-10">
               <GithubIcon />
-            </Link>
+            </Link> */}
 
             <Link
               href={link}
@@ -131,9 +129,9 @@ const projects = () => {
             >
               Visit
             </Link>
-            <Link href={github} target="_blank" className="w-8 md:w-6">
+            {/* <Link href={github} target="_blank" className="w-8 md:w-6">
               <GithubIcon />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </article>
@@ -143,21 +141,21 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Laravel Developer | Projects</title>
+        <title>Laravel Developer</title>
         <meta name="description" content="any description" />
       </Head>
       <NextSeo
 
           title="Laravel Developer"
-          description="Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!"
+          description="Explore top-notch web development with Laravel, Vue.js, and more. Elevate your online presence with top-tier developers."
           canonical="https://laraveldeveloper.online/projects"
           openGraph={{
-            url: 'https://laraveldeveloper.online/images/projects.png',
-            title: 'Expert Laravel Developer',
-            description: 'Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!',
+            url: 'https://laraveldeveloper.online/images/projects.webp',
+            title: 'Laravel Developer',
+            description: 'Explore top-notch web development with Laravel, Vue.js, and more. Elevate your online presence with top-tier developers.',
             images: [
               {
-                url: 'https://laraveldeveloper.online/images/projects.png',
+                url: 'https://laraveldeveloper.online/images/projects.webp',
                 width: 1200,
                 height: 640,
                 alt: 'Laravel Developer',
@@ -179,18 +177,18 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="HourlySpaces"
+                title="JB CodeApp"
                 img={project1}
                 height={500}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                link="/"
+                summary="Elevate your business with JB CodeApp, a leading IT solutions provider. Specializing in custom software, cloud services, and cybersecurity, we bring innovation and client-focused excellence. Let's transform possibilities together – contact us at contact@jbcodeapp.com Visit Our Website (https://jbcodeapp.com)."
+                link="https://jbcodeapp.com/"
                 github="/"
                 type="Featured Projects"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="BookingNest"
+                title="Prime Property"
                 img={project2}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
                 link="/"
@@ -200,7 +198,7 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="CaptureMoment"
+                title="Bobs Burgers"
                 img={project3}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
                 link="/"
@@ -212,34 +210,16 @@ const projects = () => {
             {/* Second Project */}
             <div className="col-span-12">
               <FeaturedProject
-                title="PropertyDealer"
+                title="HourlySpaces"
                 img={project4}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+                height={500}
+                summary="HourlySpaces is your go-to platform for flexible and convenient workspace solutions. Discover a curated selection of hourly, daily, and monthly rental spaces that cater to various needs. Whether you're a freelancer, entrepreneur, or remote worker, our user-friendly website connects you to a network of versatile spaces, including offices, meeting rooms, and event venues."
                 link="/"
                 github="/"
                 type="Featured Projects"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="TouristJourney"
-                img={project5}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                link="/"
-                github="/"
-                type="Featured Projects"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="TouristJourney"
-                img={project6}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                link="/"
-                github="/"
-                type="Featured Projects"
-              />
-            </div>
+            
           </div>
         </Layout>
       </main>

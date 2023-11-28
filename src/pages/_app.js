@@ -19,20 +19,20 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/black_ld.ico" />
       </Head>
       
       <NextSeo
       title="Laravel Developer"
-      description="Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!"
+      description="Explore top-notch web development with Laravel, Vue.js, and more. Elevate your online presence with top-tier developers."
       canonical="https://laraveldeveloper.online/"
       openGraph={{
-        url: 'https://laraveldeveloper.online/images/laravelexpert.png',
-        title: 'Expert Laravel Developer',
-        description: 'Looking for an Laravel developer? Explore top-notch web development services with a focus on Laravel, Vue.js, and more. Enhance your digital presence today!',
+        url: 'https://laraveldeveloper.online/images/laravelexpert.webp',
+        title: 'Laravel Developer',
+        description: 'Explore top-notch web development with Laravel, Vue.js, and more. Elevate your online presence with top-tier developers.',
         images: [
           {
-            url: 'https://laraveldeveloper.online/images/laravelexpert.png',
+            url: 'https://laraveldeveloper.online/images/laravelexpert.webp',
             width: 1200,
             height: 640,
             alt: 'Laravel Developer',

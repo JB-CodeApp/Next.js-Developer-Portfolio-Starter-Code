@@ -48,14 +48,15 @@ const Education = () => {
             type="M.Sc.IT (Information Technology), Computer Science"
             time="2010 - 2012"
             place="Veer Narmad South Gujarat University, Surat"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence. "
+            info="A B.Sc. in Information Technology or Computer Science includes courses like Data Structures, Web Development, Operating Systems, and Artificial Intelligence, providing a comprehensive foundation in computer science principles and applications.
+            "
           />
 
           <Details
             type="Bachelor of Science (Information Technology), Computer Science"
             time="2007 - 2010"
             place="Veer Narmad South Gujarat University, Surat"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence. "
+            info="An M.Sc. in Information Technology or Computer Science encompasses advanced courses like Machine Learning, Cybersecurity, and Big Data Analytics, offering in-depth expertise in cutting-edge technologies and specialized areas within the field."
           />
 
         </ul>

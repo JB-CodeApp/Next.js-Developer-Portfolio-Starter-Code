@@ -3,6 +3,9 @@ import Layout from "./Layout";
 import Link from "next/link";
 
 const Footer = () => {
+
+  const url = process.env.SITE_URL
+
   return (
     <footer
       className="w-full border-t-2 border-solid border-black
