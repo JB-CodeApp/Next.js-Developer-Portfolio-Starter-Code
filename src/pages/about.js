@@ -50,7 +50,7 @@ const about = () => {
           description="Explore top-notch web development with Laravel, Vue.js, and more. Elevate your online presence with top-tier developers."
           canonical="https://laraveldeveloper.online/about"
           openGraph={{
-            url: 'https://laraveldeveloper.online/images/about.webp',
+            url: 'https://laraveldeveloper.online/about',
             title: 'Laravel Developer',
             description: 'Explore top-notch web development with Laravel, Vue.js, and more. Elevate your online presence with top-tier developers.',
             images: [

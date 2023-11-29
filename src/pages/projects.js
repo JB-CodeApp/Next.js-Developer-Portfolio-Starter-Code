@@ -150,7 +150,7 @@ const projects = () => {
           description="Explore top-notch web development with Laravel, Vue.js, and more. Elevate your online presence with top-tier developers."
           canonical="https://laraveldeveloper.online/projects"
           openGraph={{
-            url: 'https://laraveldeveloper.online/images/projects.webp',
+            url: 'https://laraveldeveloper.online/projects',
             title: 'Laravel Developer',
             description: 'Explore top-notch web development with Laravel, Vue.js, and more. Elevate your online presence with top-tier developers.',
             images: [
