@@ -150,7 +150,7 @@ function Articles({ img }) {
           description="Explore top-notch web development with Laravel, Vue.js, and more. Elevate your online presence with top-tier developers."
           canonical="https://laraveldeveloper.online/articles"
           openGraph={{
-            url: 'https://laraveldeveloper.online/images/blog.webp',
+            url: 'https://laraveldeveloper.online/articles',
             title: 'Laravel Developer',
             description: 'Explore top-notch web development with Laravel, Vue.js, and more. Elevate your online presence with top-tier developers.',
             images: [

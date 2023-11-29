@@ -95,7 +95,7 @@ export default function Home() {
         <HireMe />
 
         <div className="absolute right-8 bottom-8 inline-block w-24 ms:hidden">
-          <Image src={lightBulb} alt="Laravel Developer Online" className="w-full h-auto " />
+          <Image src={lightBulb} alt="Laravel Developer" className="w-full h-auto " />
         </div>
       </main>
     </>

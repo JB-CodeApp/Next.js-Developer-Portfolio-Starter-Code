@@ -51,10 +51,10 @@ const useThemeSwitcher = () => {
 
     // { by default light mode }
 
-    //  else {
-    //   window.localStorage.setItem("theme", "light");
-    //   document.documentElement.classList.remove("light");
-    // }
+     else {
+      window.localStorage.setItem("theme", "dark");
+      document.documentElement.classList.remove("light");
+    }
   }, [mode]);
 
   return [mode, setMode];
